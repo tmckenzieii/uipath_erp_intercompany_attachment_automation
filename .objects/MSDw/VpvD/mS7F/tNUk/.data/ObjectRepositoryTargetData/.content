@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uXIg2WkD4Uy_kxPRUhJ3Jg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="db6b7325-a48f-48a9-a043-44b2155b31f0" CvElementArea="855, 567, 20, 20" CvTextArea="856, 569, 17, 17" CvType="Icon" DesignTimeRectangle="857, 570, 19, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xi6' type='' tag='IMG' aaname='Manage Attachments' /&gt;" Guid="1577322d-f81f-4302-b8ac-729fe0281df4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA4SURBVEhLY/hPQzCMDW/vmYCCSQGjhmMF9DMc3SBiMS4wajhWQL8IxQZGDccKaGo4JWCoGv7/PwALC6drPD3PiwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1dmlvjqyet' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a22af7cd8b023a2bafbd4c46a1edff4f.png" xmlns="">0gF3_ya2m60W21jnGuU1kIA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

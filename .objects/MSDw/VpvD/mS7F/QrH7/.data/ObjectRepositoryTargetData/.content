@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v0idYrz280qHU2lry5qaow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="b4f81c6f-3eb3-4511-a0f3-43d3a0f78372" CvElementArea="718, 445, 155, 157" CvTextArea="759, 539, 74, 13" CvTextArgument="Transactions" CvType="Button" DesignTimeRectangle="721, 448, 150, 143" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Transactions' /&gt;" Guid="34d1cddf-46cc-4476-8c30-3f1b4a0de174" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b4f81c6f-3eb3-4511-a0f3-43d3a0f78372" CvElementArea="879, 445, 154, 156" CvTextArea="915, 539, 82, 13" CvTextArgument="Reconciliation" CvType="Button" DesignTimeRectangle="881, 448, 150, 143" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_reconciliation' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Reconciliation' /&gt;" Guid="5d95279a-2acc-46ce-849e-6a67cc023307" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4816d337e8ff8497436ab5a5551fa19a.png" xmlns="">0n2kP7QzikU6plJMwWlHl3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

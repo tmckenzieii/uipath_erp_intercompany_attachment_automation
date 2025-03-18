@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UZqOUtEIIUKgALxFn9TBlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="e8ce660e-07c6-467b-a771-f62fa748628a" CvTextArea="1266, 335, 196, 20" CvTextArgument="Intercompany Accounting" CvType="Text" DesignTimeRectangle="1268, 332, 193, 22" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' type='' class='flat-tabs-text' aaname='Intercompany Accounting' check:innerText='Intercompany Accounting' /&gt;" Guid="f80da5fa-e0d6-4676-806e-7cb287b75986" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e8ce660e-07c6-467b-a771-f62fa748628a" CvTextArea="1067, 334, 151, 21" CvTextArgument="General Accounting" CvType="Text" DesignTimeRectangle="1069, 332, 149, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='groupNode_general_accounting' tag='A' type='' class='flat-tabs-text' aaname='General Accounting' check:innerText='General Accounting' /&gt;" Guid="6a05fe4c-b53f-4880-95fb-b6978b5996ec" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="597b4026e7d6eba0f382e18a91a75ef9.png" xmlns="">0gMSIiSmXSUKeGz00rPrSuQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

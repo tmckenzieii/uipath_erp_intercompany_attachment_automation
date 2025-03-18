@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6TryRYuEI0asbsWGlqKdMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="8e0e581f-bede-48bd-8107-7d8b0eb69f54" CvElementArea="624, 590, 82, 23" CvTextArea="632, 595, 153, 12" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="625, 592, 300, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='x2k' tag='INPUT' type='file' aaname='File Name' /&gt;" Guid="3b4ad38f-6e9c-46b4-b97f-2eaf4b17fd7f" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1dmlvjqyet' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="95ff0ce8020759cb6152efadd6236f53.png" xmlns="">0JiR2BJIzhkCT7XJ0Zznr1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

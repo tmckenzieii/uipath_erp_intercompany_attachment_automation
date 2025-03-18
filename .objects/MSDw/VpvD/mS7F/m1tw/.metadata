@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Icon 'Favorites and Recent It…'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "m1twvZ0Wn0eJsaqEGOzV2g",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/m1twvZ0Wn0eJsaqEGOzV2g",
+  "ParentRef": "RjGUmfGqsEmp6iwU4JCC7w/mS7FudTWnUS8y0wJx6V-Vw",
+  "Created": "2025-03-11T15:35:01.6696013Z",
+  "Updated": "2025-03-11T15:35:01.6696013Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

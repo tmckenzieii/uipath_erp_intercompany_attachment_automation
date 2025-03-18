@@ -1,0 +1,392 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Oracle_Browser_Actions" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="batch_number" Type="InArgument(x:String)" />
+    <x:Property Name="file_location" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Oracle_Browser_Actions_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Oracle_Browser_Actions" sap:VirtualizedContainerService.HintSize="1270,4059" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,4036" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="81214ba6-f098-4673-946c-06f752dc5dc9">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,3796" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Single Sign-On'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.login.us2.oraclecloud.com/oam/server/obrareq.cgi" CVScreenId="6204b811-13ef-4240-88d7-2f863c15ddbd" ContentHash="zbwmkushFECJc0lr-nGP4Q" CvElementArea="313, 425, 331, 51" CvTextArea="375, 440, 206, 21" CvTextArgument="Company Single Sign-On" CvType="Button" DesignTimeRectangle="316, 426, 325, 48" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='ssoBtn' tag='BUTTON' type='button' class='ssoBtnActive' aaname='Company Single Sign-On' check:innerText='Company Single Sign-On' /&gt;" Guid="2f07cdc0-bf6f-4827-b4dc-36f93d2e1159" InformativeScreenshot="8818a3f40626d45a85752a9e9a6364fb.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/0eccgj6Ql0yKI2e_Pr8frA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'McKenzie, Trevor Trevor…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/381d31b0-f4b9-4f22-a0dd-92488db3eb82/saml2" ContentHash="utic-8d9ykCbefjj32Ccgg" DesignTimeRectangle="748, 491, 440, 74" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='table' aaname='              ' check:innerText='McKenzie, Trevor&amp;#xA;Trevor.McKenzie@wescodist.com&amp;#xA;Connected to Windows' /&gt;" Guid="3582cef4-d7b8-4048-96a8-b4889491b0fd" InformativeScreenshot="58c7aebff470d5e418e93826933f91cd.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/5nVnNUm3e0m2csYokDXVgw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Icon 'Favorites and Recent It…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/AtkHomePageWelcome" CVScreenId="b43d9990-83ea-43f3-ae9a-4a23de95f160" ContentHash="gyozLJMHGESmoHzrR4SHgw" CvElementArea="785, 125, 29, 28" CvType="Icon" DesignTimeRectangle="791, 131, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl class='xiz' tag='TABLE' /&gt;&lt;webctrl class='svg-outline' type='' aaname='' tag='path' /&gt;" Guid="4fba5f44-e604-48ce-9f9c-0f33de3aa713" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL7Yy/agJBHITveQKCgYBYCBaBQCBiIYhFECF1IFhFCCI2IoKInKRUrAwp8rcxFialafR8Am31Da6YMMfueovLJYHD6gY+WPY381nHsSP8hXqt6mG6mfhVnMtm8PU5hQzf/DN1/QSKu5220O2HN9NGYhRflYpYOguhAL5nM1wW8h58yziLudc1OTTxSTyG4aAvZoDrumg1G9qA8I83GW649XeUuHxzjfVqJarA5GOMi/MzreyHN3ZkuKVD3q3TdAovz0/iDGw3G9xVbjVJEOxyI0MXndZ9zxZfwOPDCKlkwigIghtuZehU4ve3V+PoP9DBROJIvCMSKw4vDgNGE4cZJQ4fGz9O5EP8qL1tGAAAAABJRU5ErkJggg==" InformativeScreenshot="15b8028d2422f09eb81a2646ab8c05eb.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/m1twvZ0Wn0eJsaqEGOzV2g" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b43d9990-83ea-43f3-ae9a-4a23de95f160" CvElementArea="828, 125, 30, 28" CvType="Icon" DesignTimeRectangle="831, 132, 24, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xiz' tag='TABLE' /&gt;&lt;webctrl aaname='Favorites and Recent Items' type='' tag='A' class='svg-glob xko p_AFIconOnly' check:text='Favorites and Recent Items' /&gt;" Guid="fe37e6de-a6a5-488c-8e01-5cf9b1cf86d7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAASCAYAAABIB77kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIASURBVEhLlZXpLkNRFIU9DzGTkhIkfkgkhogxSg3xBIQQipoa8QiGmnmUooYaSkX/q186aslm7brXbe172+7kS07OXnuttOecNq+0MJ9y5dLtZqReJnIOnJ6cIKWmJsZFjRE5BdZUVVLg9fU3jnhdXVkmavXIKXDPucNBoVCIIpEIr3e2N0WtHlkHtrc009fXJ4es2BdpY93Ba+yhJ81IZAxsamyg0aHBn0tywQHehwcqKyqg8uJC8r+88N75mYtGrAOslTy0qIGmilKy9PXQom2ODvacdOZyUSgYZENtWXq71eGxEevv7l8Fg+88u7/rpAXbLHuaykv+B6KBs9Grt0CAnNtb6qDC8eEB9/QKnvBW9ClfKRrhcJiF8Xicz6q/tyurmwgNtKtLdkokEuyRHgb+naE29PnZR3XmqpS+EQ21Zp5BwSM9DIiXBsJoNMqDMICRpNMCjd+fvER6YUAMBEMD/WoojBrra0UdQC+bMKAbCIYHLeoDf/R6RQ1AD4Uwq6VP1CgYBoJ1xxqbXV9din2AHsqxuiz2tWQMPD05YrOT40OxD7LRKGQM9Hhu2AyP2GyqIPuCje7vbhms8Rzs83Os8dxcix5aDAPx8/URi7EZ/v9iseQl0hbO2H1xzmtoMSN5KRgGdnW0sZG2fL4nss3O8CfGOr0621tFryT59A1RhDayjDMwQwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Intercompany Accounting'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="e8ce660e-07c6-467b-a771-f62fa748628a" ContentHash="UZqOUtEIIUKgALxFn9TBlg" CvTextArea="1266, 335, 196, 20" CvTextArgument="Intercompany Accounting" CvType="Text" DesignTimeRectangle="1268, 332, 193, 22" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' type='' class='flat-tabs-text' aaname='Intercompany Accounting' check:innerText='Intercompany Accounting' /&gt;" Guid="f80da5fa-e0d6-4676-806e-7cb287b75986" InformativeScreenshot="597b4026e7d6eba0f382e18a91a75ef9.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/j16qWjBaRUS2n69ecRn7gg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="e8ce660e-07c6-467b-a771-f62fa748628a" CvTextArea="1067, 334, 151, 21" CvTextArgument="General Accounting" CvType="Text" DesignTimeRectangle="1069, 332, 149, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='groupNode_general_accounting' tag='A' type='' class='flat-tabs-text' aaname='General Accounting' check:innerText='General Accounting' /&gt;" Guid="6a05fe4c-b53f-4880-95fb-b6978b5996ec" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reconciliation'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="b4f81c6f-3eb3-4511-a0f3-43d3a0f78372" ContentHash="v0idYrz280qHU2lry5qaow" CvElementArea="718, 445, 155, 157" CvTextArea="759, 539, 74, 13" CvTextArgument="Transactions" CvType="Button" DesignTimeRectangle="721, 448, 150, 143" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Transactions' /&gt;" Guid="34d1cddf-46cc-4476-8c30-3f1b4a0de174" InformativeScreenshot="4816d337e8ff8497436ab5a5551fa19a.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/QrH7iObw5km3iakFjW4H5Q" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b4f81c6f-3eb3-4511-a0f3-43d3a0f78372" CvElementArea="879, 445, 154, 156" CvTextArea="915, 539, 82, 13" CvTextArgument="Reconciliation" CvType="Button" DesignTimeRectangle="881, 448, 150, 143" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_reconciliation' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Reconciliation' /&gt;" Guid="5d95279a-2acc-46ce-849e-6a67cc023307" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="xlcJ8LoS9UGC-iUyXyEwSQ" DesignTimeRectangle="1881, 317, 42, 42" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x1gh' aaname='Tasks' /&gt;" Guid="e563576d-98f0-44be-9512-aabeadc27046" InformativeScreenshot="0c5fbc0eb7497482849e74f861e62ba9.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/E9yyQepN5ketZOR2L86Iqg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Manage Intercompany Out…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="3e627e39-655e-4243-a773-f74ba7ba0482" ContentHash="yrAomkyKkUOFzgawI2nF5Q" CvTextArea="1642, 188, 248, 14" CvTextArgument="Manage Intercompany Outbound Transactions" CvType="Text" DesignTimeRectangle="1643, 188, 247, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='xml' aaname='Manage Intercompany Outbound Transactions' check:innerText='Manage Intercompany Outbound Transactions' /&gt;" Guid="feeb8b0f-53e6-42c1-9551-6505819305fb" InformativeScreenshot="aa64b5c5856980f2d1e9454b6949e7ee.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/B4uGVd68mUSe5AKQDaI6Fw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Text="[batch_number]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="7f2c2eb5-1b21-4ddb-88fb-42dd9d2fd5a0" ContentHash="YPdhAFTvR0yyQxSoRUlg_g" CvElementArea="317, 302, 161, 30" CvType="InputBox" DesignTimeRectangle="319, 303, 158, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname=' Batch Number' /&gt;" Guid="e5f1d718-2e79-4ea0-a8ec-4ddc008b260f" InformativeScreenshot="756008ac42f1692152ef87d3be6b9fe3.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/I1xZDaIawUGoQIrZd7rTVg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='ju0t9oud9' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="aa4a8260-94c3-437b-a7f0-74a5c9054def" ContentHash="Jh3a-oO39UOrOoCOrUPVQg" CvElementArea="1743, 377, 56, 30" CvTextArea="1751, 385, 40, 12" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1744, 378, 54, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='xhv p_AFTextOnly' aaname='Search' check:innerText='Search' /&gt;" Guid="1ae24d32-c6e3-4e5a-8b88-667686207d4f" InformativeScreenshot="e08c7f25ebed35423d5026a76d527330.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/gbkvRaJLWEK8t5CE1BOpgQ" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='e3wyj9e30' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '22257'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="85c32d1c-fa3f-41c4-a698-38c22482cee4" ContentHash="lx95OUqUeUC4cnGEwtW8dQ" CvTextArea="80, 430, 35, 12" CvTextArgument="22257" CvType="Text" DesignTimeRectangle="81, 430, 33, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xmx' type='' tag='A' aaname='22257' check:innerText='22257' /&gt;" Guid="5be780f6-3666-4a64-a71b-536e39a0cfdf" InformativeScreenshot="100328612e4843dfc6d872b1100e61dd.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/YyFErnsr9keeeM0CZEaDqg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1dmlvjqyet' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="db6b7325-a48f-48a9-a043-44b2155b31f0" ContentHash="uXIg2WkD4Uy_kxPRUhJ3Jg" CvElementArea="855, 567, 20, 20" CvTextArea="856, 569, 17, 17" CvType="Icon" DesignTimeRectangle="857, 570, 19, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xi6' type='' tag='IMG' aaname='Manage Attachments' /&gt;" Guid="1577322d-f81f-4302-b8ac-729fe0281df4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA4SURBVEhLY/hPQzCMDW/vmYCCSQGjhmMF9DMc3SBiMS4wajhWQL8IxQZGDccKaGo4JWCoGv7/PwALC6drPD3PiwAAAABJRU5ErkJggg==" InformativeScreenshot="a22af7cd8b023a2bafbd4c46a1edff4f.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/tNUkcsq39k2WiUgjH4wzOw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1dmlvjqyet' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="8e0e581f-bede-48bd-8107-7d8b0eb69f54" ContentHash="6TryRYuEI0asbsWGlqKdMg" CvElementArea="624, 590, 82, 23" CvTextArea="632, 595, 153, 12" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="625, 592, 300, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='x2k' tag='INPUT' type='file' aaname='File Name' /&gt;" Guid="3b4ad38f-6e9c-46b4-b97f-2eaf4b17fd7f" InformativeScreenshot="95ff0ce8020759cb6152efadd6236f53.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/77DWKVnAP0mLUkTvjYBcdA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1dmlvjqyet' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Text="[file_location]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="808fa4fa-cb8b-4cff-bdab-6edf569d1120" ContentHash="HzjxtFnY9k2q7Ulc81M7gQ" CvElementArea="196, 459, 538, 26" CvType="InputBox" DesignTimeRectangle="201, 465, 514, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="e85501ca-f997-4b9c-bd72-815ac11b4b86" InformativeScreenshot="efbc66afadae5ad2e1abb2f143dbea0f.png" IsResponsive="True" Reference="RjGUmfGqsEmp6iwU4JCC7w/PK6ntAL7yUCWEcgvtFIMmg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="808fa4fa-cb8b-4cff-bdab-6edf569d1120" CvTextArea="137, 465, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="138, 464, 54, 15" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="1d00af13-9a4b-4079-aa84-cea76eff132e" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a0286301-77f1-4a2a-b4f8-2e46c92d347f" ContentHash="GXzQ86QD0kOSTLiOahpiiQ" CvElementArea="747, 489, 89, 26" CvTextArea="775, 495, 30, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='&amp;amp;Open' /&gt;" Guid="77496955-f37e-4b8c-8a42-047086fa0b0b" InformativeScreenshot="8eded895be588a068b699b6a155ac33a.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/RXuFl-hFTUiu773fh-K6SQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81214ba6-f098-4673-946c-06f752dc5dc9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="875ffc6a-6331-40a3-a598-2b598a016128" ContentHash="nuUjpDiGJkCd4GN6SmN43Q" CvElementArea="1337, 685, 38, 31" CvTextArea="1347, 693, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1339, 686, 35, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='xuz p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="9040b0f0-1019-4640-a973-e4e3670ca669" InformativeScreenshot="93c06726dcb859ef2364748425bf3b95.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/8oSVIF8lLk2CtQbWN_V1UA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='1csl75vemf' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="875ffc6a-6331-40a3-a598-2b598a016128" CvElementArea="1337, 685, 38, 31" CvTextArea="1347, 693, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1357, 693, 9, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='xve' aaname='K' check:innerText='K' /&gt;" Guid="f6e80792-ea58-4fbb-83f5-ffb786495656" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="ag5qrE6GQEKnvpYxreuMhw" IconBase64="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" InformativeScreenshot="a1ba597b4095bb54176ba23cc848a7eb.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/mS7FudTWnUS8y0wJx6V-Vw" Selector="&lt;html app='msedge.exe' url='https://eklm-dev2.fa.us2.oraclecloud.com/' /&gt;" Url="https://eklm-dev2.fa.us2.oraclecloud.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

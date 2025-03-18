@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="utic-8d9ykCbefjj32Ccgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.microsoftonline.com/381d31b0-f4b9-4f22-a0dd-92488db3eb82/saml2" DesignTimeRectangle="748, 491, 440, 74" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='table' aaname='              ' check:innerText='McKenzie, Trevor&amp;#xA;Trevor.McKenzie@wescodist.com&amp;#xA;Connected to Windows' /&gt;" Guid="3582cef4-d7b8-4048-96a8-b4889491b0fd" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="58c7aebff470d5e418e93826933f91cd.png" xmlns="">0X-EfUgPFT0eHei3B41X1sA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

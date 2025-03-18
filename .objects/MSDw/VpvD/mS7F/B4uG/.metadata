@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Manage Intercompany Out…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "B4uGVd68mUSe5AKQDaI6Fw",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/B4uGVd68mUSe5AKQDaI6Fw",
+  "ParentRef": "RjGUmfGqsEmp6iwU4JCC7w/mS7FudTWnUS8y0wJx6V-Vw",
+  "Created": "2025-03-11T15:40:07.7599215Z",
+  "Updated": "2025-03-11T15:40:07.7599215Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zbwmkushFECJc0lr-nGP4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.login.us2.oraclecloud.com/oam/server/obrareq.cgi" CVScreenId="6204b811-13ef-4240-88d7-2f863c15ddbd" CvElementArea="313, 425, 331, 51" CvTextArea="375, 440, 206, 21" CvTextArgument="Company Single Sign-On" CvType="Button" DesignTimeRectangle="316, 426, 325, 48" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='ssoBtn' tag='BUTTON' type='button' class='ssoBtnActive' aaname='Company Single Sign-On' check:innerText='Company Single Sign-On' /&gt;" Guid="2f07cdc0-bf6f-4827-b4dc-36f93d2e1159" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8818a3f40626d45a85752a9e9a6364fb.png" xmlns="">0AfJoge99w0efijlfEddSfg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Company Single Sign-On",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "0eccgj6Ql0yKI2e_Pr8frA",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/0eccgj6Ql0yKI2e_Pr8frA",
+  "ParentRef": "RjGUmfGqsEmp6iwU4JCC7w/mS7FudTWnUS8y0wJx6V-Vw",
+  "Created": "2025-03-11T15:30:27.8903494Z",
+  "Updated": "2025-03-11T15:30:27.8903494Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
