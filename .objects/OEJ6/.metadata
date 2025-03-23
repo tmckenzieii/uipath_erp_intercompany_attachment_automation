@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Sign in to your account",
+  "Type": "App",
+  "Id": "OEJ69pPIWEu3gifDiW72QA",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/OEJ69pPIWEu3gifDiW72QA",
+  "Created": "2025-03-22T15:18:18.9401705Z",
+  "Updated": "2025-03-22T15:18:18.9401705Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

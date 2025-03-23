@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ej8sZsMUjUCZsZUn11QNqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.microsoftonline.com/381d31b0-f4b9-4f22-a0dd-92488db3eb82/saml2" CVScreenId="936f4caa-328a-41ef-a90c-c5d94c73a084" CvTextArea="681, 518, 221, 15" CvTextArgument="Trevor.McKenzie@wescodist.com" CvType="Text" DesignTimeRectangle="579, 489, 440, 72" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='table' aaname='              ' check:innerText='Trevor.McKenzie@wescodist.com' /&gt;" Guid="a7f9938f-1d4a-41f9-bdca-89230030170e" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_afr_init_' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="936f4caa-328a-41ef-a90c-c5d94c73a084" CvTextArea="622, 453, 172, 21" CvTextArgument="Pick an account" CvType="Text" DesignTimeRectangle="623, 449, 352, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Pick an account' check:innerText='Pick an account' /&gt;" Guid="b76a04c6-ad4b-4a49-a6a9-57db7fd92a58" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f0ec950a60cac2038ee0be5d6fa5967.png" xmlns="">0Wy-VbtumhUuPLTqeXa5BQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

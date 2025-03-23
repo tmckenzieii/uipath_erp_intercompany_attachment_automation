@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oLPytDmGhUaZtHdNEuO7eg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="edde1e24-d570-4ea8-99d6-fb3f584b2269" CvElementArea="1217, 600, 58, 30" CvTextArea="1226, 608, 41, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1218, 601, 56, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Cancel' type='' tag='BUTTON' class='xuz p_AFTextOnly' check:innerText='Cancel' /&gt;" Guid="860f0add-4a72-4c69-9e09-30e991a9d966" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='l6qvj51y3' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="edde1e24-d570-4ea8-99d6-fb3f584b2269" CvElementArea="1217, 600, 58, 30" CvTextArea="1226, 608, 41, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1227, 608, 8, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='C' type='' tag='SPAN' class='xve' check:innerText='C' /&gt;" Guid="477fdf97-5436-4910-9a45-7454d46cdf53" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8924537ae24eb4e3a8a05b8132392696.png" xmlns="">0k0cuPs7gHkG-2NsMwdvffA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

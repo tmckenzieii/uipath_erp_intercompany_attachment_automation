@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Sign in to your account",
+  "Type": "Screen",
+  "Id": "pzyZF5PO7060Kb6YhwU1iQ",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/pzyZF5PO7060Kb6YhwU1iQ",
+  "ParentRef": "RjGUmfGqsEmp6iwU4JCC7w/WeAP97JBt0Sel_jgSdL8xQ",
+  "Created": "2025-03-22T15:18:19.0343602Z",
+  "Updated": "2025-03-22T15:18:19.0343602Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

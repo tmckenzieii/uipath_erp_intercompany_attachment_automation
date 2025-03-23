@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g8GqZ7tYrku37D-YPMTdtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="993580b4-25c7-440c-b67d-228e34f26154" CvElementArea="313, 306, 162, 31" CvType="InputBox" DesignTimeRectangle="315, 308, 158, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname=' Batch Number' /&gt;" Guid="c6559858-683f-4859-a950-413f855083f6" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='tuyem66he' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="240df8549583f4450700c749fc6882ea.png" xmlns="">0pfI-7_MsPES_0PUbGX6lHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

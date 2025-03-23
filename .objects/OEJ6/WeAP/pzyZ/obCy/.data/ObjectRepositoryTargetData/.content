@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xLuitmgRoEmLW4VP8AIjQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="84c7b820-8de6-4c0a-8d13-998df71ab740" CvElementArea="313, 306, 162, 31" CvType="InputBox" DesignTimeRectangle="315, 308, 158, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname=' Batch Number' /&gt;" Guid="65f788e3-96b9-425f-9c18-5ffd6b64526c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='agmft9ha7' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="84c7b820-8de6-4c0a-8d13-998df71ab740" CvTextArea="76, 315, 84, 12" CvTextArgument="Batch Number" CvType="Text" DesignTimeRectangle="77, 315, 82, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='af_query_criterion::label-text' type='' tag='LABEL' aaname='Batch Number' check:innerText='Batch Number' /&gt;" Guid="661e9848-77b4-4ecf-b8d1-18b8d3b1af52" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="02dfbd18cf21cc2e7908c168f5bd9795.png" xmlns="">0EGYqMkPNx0ySAfA8RliCdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

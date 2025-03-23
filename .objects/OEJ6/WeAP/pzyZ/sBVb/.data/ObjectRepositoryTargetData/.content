@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MBAGiJXiaE2pxGTA7lqYAQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="8ddc321b-8f33-4b74-be99-e32f9b696911" CvElementArea="1169, 600, 38, 30" CvTextArea="1177, 608, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1170, 601, 35, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='xuz p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="ad02be64-54dd-4b2c-a620-a8a2c0c8f46c" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='352n7e0mj' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8ddc321b-8f33-4b74-be99-e32f9b696911" CvElementArea="1169, 600, 38, 30" CvTextArea="1177, 608, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1188, 608, 9, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='xve' aaname='K' check:innerText='K' /&gt;" Guid="42c27574-dfbd-4192-a0d1-286286b218df" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a58bd4ada5350037d0062f30f75a0544.png" xmlns="">09z0h8arvLE--EWw5Irt9pg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

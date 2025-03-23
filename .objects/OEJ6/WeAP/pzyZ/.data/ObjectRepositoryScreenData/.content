@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="muHyhK-1ok-NYyKDFsNgPw" Reference="RjGUmfGqsEmp6iwU4JCC7w/pzyZF5PO7060Kb6YhwU1iQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="165, 48, 1597, 914" BrowserType="Chrome" ContentHash="nZu5_OUn306uowixdbJYUQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" Reference="RjGUmfGqsEmp6iwU4JCC7w/pzyZF5PO7060Kb6YhwU1iQ" Selector="&lt;html app='chrome.exe' url='https://eklm-dev2.fa.us2.oraclecloud.com/' /&gt;" Url="https://eklm-dev2.fa.us2.oraclecloud.com/" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="a40b5458d495850131357994776643a8.jpg" xmlns="">0uMifNujoy0eBzVJ6XnZ6hQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BegIQ0RBVk2Kiwp9-OhRqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="3d33edf6-310a-4ec7-9194-3e465cad2f89" CvElementArea="851, 527, 20, 20" CvTextArea="852, 529, 17, 17" CvType="Icon" DesignTimeRectangle="853, 530, 19, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xi6' type='' tag='IMG' aaname='Manage Attachments' /&gt;" Guid="1facfe24-31f0-4558-948f-89711d4bddf6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA4SURBVEhLY/hPQzCMDW/vmYCCSQGjhmMF9DMc3SBiMS4wajhWQL8IxQZGDccKaGo4JWCoGv7/PwALC6drPD3PiwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='hyb95q3od' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3d33edf6-310a-4ec7-9194-3e465cad2f89" CvTextArea="740, 531, 75, 12" CvTextArgument="Attachments" CvType="Text" DesignTimeRectangle="742, 531, 73, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='af_panelLabelAndMessage_label-text' aaname='Attachments' check:innerText='Attachments' /&gt;" Guid="635c15f1-e9f0-4704-b192-bc6c54024385" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f88b1d5c3d92517aa1395b1ce9f8d2a.png" xmlns="">0ELLfT8cuF0-Yn_MegYo_Qg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

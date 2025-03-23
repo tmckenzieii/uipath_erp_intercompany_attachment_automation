@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wCrAUL0yzUealWs0o00LCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="8b5705ff-c62b-42db-9c52-b7934123e6d4" CvTextArea="75, 390, 36, 12" CvTextArgument="22257" CvType="Text" DesignTimeRectangle="77, 390, 33, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xmx' type='' tag='A' aaname='22257' check:innerText='22257' /&gt;" Guid="c0c98e1c-d33a-44e6-ae8d-1e0337b56d3e" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='1crt4ebmeu' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8b5705ff-c62b-42db-9c52-b7934123e6d4" CvTextArea="76, 345, 91, 13" CvTextArgument="Batch Number" CvType="Text" DesignTimeRectangle="77, 345, 89, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='   Batch Number Batch Amount Provider Batch Status Transaction Type Batch Date Accounting Date Batch Description' tag='TABLE' /&gt;&lt;webctrl aaname='Batch Number' type='' tag='SPAN' class='af_column_label-text' check:innerText='Batch Number' /&gt;" Guid="7474a96e-6baf-4e22-a508-43d86844777d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="73053d9f6d57270297f637cdb406b3a8.png" xmlns="">0KmVAxvibJk2My46fu0IPHw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

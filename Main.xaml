@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="TriggerEventArgs" Type="InArgument(ui:FileChangeTriggerArgs)" />
   </x:Members>
@@ -46,6 +46,7 @@
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.UIAutomationNext.Models</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -96,125 +97,49 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1220,2074" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1093,688" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="trigger_folder_path" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="536,104" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_2" NotifyFilters="FileName" Path="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder" SchedulingMode="Sequential" TriggerId="f850bdf1-a7eb-4b92-856b-3ddd01dae05c">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:FileChangeTriggerV3>
-    <Sequence sap:VirtualizedContainerService.HintSize="536,1947" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="450,237" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_7" NotifyFilters="FileName" Path="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder\" SchedulingMode="Sequential" TriggerId="c6f4a77e-db32-41ad-912e-1f2bcb49800f" />
+    <Sequence sap:VirtualizedContainerService.HintSize="450,428" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
-        <Variable x:TypeArguments="s:String[]" Name="folder_files" />
-        <Variable x:TypeArguments="x:String" Name="folder_path" />
+        <Variable x:TypeArguments="x:String" Name="archive_folder_path" />
+        <Variable x:TypeArguments="s:String[]" Name="unprocessed_files" />
+        <Variable x:TypeArguments="x:Int32" Name="unprocessed_file_count" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign DisplayName="Assign variable for folder path" sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_1">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[folder_path]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder\</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign DisplayName="Assign variable list for folder files" sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_2">
-        <Assign.To>
-          <OutArgument x:TypeArguments="s:String[]">[folder_files]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(folder_path)]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <ui:ForEachFileX DisplayName="Loop through folder files" Folder="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder" sap:VirtualizedContainerService.HintSize="502,1636" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="CreationDateOldFirst" SkipFolderWithoutPermission="False">
-        <ui:ForEachFileX.Body>
-          <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
-            <ActivityAction.Argument1>
-              <DelegateInArgument x:TypeArguments="si:FileInfo" Name="File" />
-            </ActivityAction.Argument1>
-            <ActivityAction.Argument2>
-              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-            </ActivityAction.Argument2>
-            <Sequence DisplayName="Loop actions" sap:VirtualizedContainerService.HintSize="468,1355" sap2010:WorkflowViewState.IdRef="Sequence_3">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="file_location" />
-                <Variable x:TypeArguments="s:String[]" Name="split_file_location" />
-                <Variable x:TypeArguments="x:String" Name="file_path" />
-                <Variable x:TypeArguments="x:String" Name="file_name" />
-                <Variable x:TypeArguments="x:String" Name="batch_number" />
-                <Variable x:TypeArguments="s:String[]" Name="split_items" />
-              </Sequence.Variables>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Assign variable for file locations" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[file_location]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[File.FullName]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;The file location is: &quot; + file_location]" />
-              <Assign DisplayName="Assign split variables for the fill location by &quot;\&quot;" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="s:String[]">[split_file_location]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="s:String[]">[Split(file_location,"\")]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <Assign DisplayName="Assign variable for end of file name" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[file_name]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[split_file_location(7)]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;The file name is &quot; + file_name]" />
-              <Assign DisplayName="Assign variable for end of file name" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="s:String[]">[split_items]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="s:String[]">[file_name.Split("_")]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <Assign DisplayName="Assign variable for batch number" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_7">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[batch_number]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[split_items(0)]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;The batch number is :&quot; + batch_number]" />
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle Browser Actions - Invoke Workflow File (Oracle Browser Actions.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Oracle Browser Actions.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:String" x:Key="batch_number">[batch_number]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="file_location">[file_location]</InArgument>
-                </ui:InvokeWorkflowFile.Arguments>
-              </ui:InvokeWorkflowFile>
-              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\02 Test Archive Folder" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[file_location]" />
-            </Sequence>
-          </ActivityAction>
-        </ui:ForEachFileX.Body>
-      </ui:ForEachFileX>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Assign Folder and File Arguments.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_trigger_folder_path">[trigger_folder_path]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_archive_folder_path">[archive_folder_path]</OutArgument>
+          <OutArgument x:TypeArguments="s:String[]" x:Key="out_trigger_folder_files">[unprocessed_files]</OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="out_trigger_folder_file_count">[unprocessed_file_count]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Open and Navigate to IC Transactions.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
   </Sequence>
 </Activity>
