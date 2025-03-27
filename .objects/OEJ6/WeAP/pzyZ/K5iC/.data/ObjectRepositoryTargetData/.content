@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KvjIPNpUTE-Ze5s54aKdOg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" CvElementArea="1894, 18, 21, 20" CvType="CloseButton" DesignTimeRectangle="1882, 8, 46, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="a19869f0-ddff-4e47-affe-63726ebddd54" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Manage Intercompany Outbound Transactions - Transactions - Oracl*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" CvElementArea="1849, 18, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="1836, 8, 46, 40" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="49fe4243-3e5a-45e6-9dde-f2f60f128c25" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="03e898c9b5efc1f75eb53d3ef2973ebf.png" xmlns="">0YnUsGDOha0CzgnJSBpmH0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

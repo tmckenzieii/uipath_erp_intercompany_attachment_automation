@@ -110,7 +110,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Login_and_Navigate_to_IC_Batches" sap:VirtualizedContainerService.HintSize="2021,8972" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_and_Navigate_to_IC_Batches" sap:VirtualizedContainerService.HintSize="2041.9999999999998,9499" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="trigger_folder_path" />
       <Variable x:TypeArguments="x:String" Name="archive_folder_path" />
@@ -122,7 +122,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="2021,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflows\Assign Folder and File Arguments.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="2042,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflows\Assign Folder and File Arguments.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="out_trigger_folder_path">[trigger_folder_path]</OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="out_archive_folder_path">[archive_folder_path]</OutArgument>
@@ -130,28 +130,28 @@
         <OutArgument x:TypeArguments="x:Int32" x:Key="out_trigger_folder_file_count">[unprocessed_file_count]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Sign in to your account" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2021,8772" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Sign in to your account" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2042,9299" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1987,8532" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2008,9058" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Favorites and Recent It…'" sap:VirtualizedContainerService.HintSize="1953,8470" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+            <uix:NCheckState DisplayName="Check App State 'Favorites and Recent It…'" sap:VirtualizedContainerService.HintSize="1974,8996" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears - Is Logged In" sap:VirtualizedContainerService.HintSize="581,7169" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears - Is Logged In" sap:VirtualizedContainerService.HintSize="588,7415" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_17" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Favorites and Recent It…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_17" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Favorites and Recent It…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/AtkHomePageWelcome" CVScreenId="c11f738e-3a48-4394-a242-0992275a7576" CvElementArea="1362, 131, 29, 28" CvType="Icon" DesignTimeRectangle="1368, 137, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='xiz' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='svg-outline' tableCol='12' tableRow='1' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl class='xiz' tag='TABLE' /&gt;&lt;webctrl class='svg-outline' type='' aaname='' tag='path' /&gt;" Guid="ba4b0b43-3279-42cf-8375-adcf8dfe3622" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAENSURBVEhLYzDU1fpPDG5urP/f3FCHVQ4bJmhwSIDf/0MHD/yHARAbJIZNLTLGa/Dkif1Q4zABSA6bHhjGanBKYvz/y5cuQo34///0qVP/YyPDwRjEhoFLFy+A1WIzA8VgEwPd/4sXLoBq+///9+/f/3u6OlA0gDBIDCQHAyA9IL3IauAGFxfm/X/08CFU6f//e3bv+u/r5Y6iGBmD5EBqYACkF2QGTJ7BxcH2/6aNG6DS//+/ef36f21VJYoh+DBILUgPDIDMApnJMGPaVKjQ//9rVq38b2tpjtUAfBikB6QXBkBmwg3eumUzVk2kYJAZIDBq8KjBCDxqMBzT32BqYBBAMZiaAG4w9fHU/wA/9UP6KW3SxQAAAABJRU5ErkJggg==" InformativeScreenshot="9f0cdeb17ae81c063ca74102ef6b0247.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='a7c2p3w79' title='Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -175,8 +175,8 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_18" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Intercompany Accounting''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_18" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Intercompany Accounting''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a7c19c2a-10a8-48e8-976c-076507e172bb" CvElementArea="1285, 342, 21, 26" CvTextArea="1177, 340, 95, 20" CvTextArgument="Intercompar" CvType="ArrowButton" DesignTimeRectangle="1178, 337, 194, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' type='' class='flat-tabs-text selected' aaname='Intercompany Accounting' check:innerText='Intercompany Accounting' /&gt;" Guid="dffd8162-387f-4cc9-9cb6-5b45e2c523d8" InformativeScreenshot="431b5cc3145573afc42050a550672989.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='a7c2p3w79' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.PointOffset>
@@ -195,8 +195,8 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_19" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Transactions''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                  <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Transactions''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a7c19c2a-10a8-48e8-976c-076507e172bb" CvElementArea="628, 449, 155, 156" CvTextArea="670, 544, 72, 13" CvTextArgument="Transactions" CvType="Button" DesignTimeRectangle="631, 453, 150, 143" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Transactions' /&gt;" Guid="afe2cb91-8c90-4655-a81d-6a4428769f55" InformativeScreenshot="61368280d3ac7c6ba197c9940a69c07e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='a7c2p3w79' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.PointOffset>
@@ -215,8 +215,8 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_15" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''IMG''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_15" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''IMG''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" DesignTimeRectangle="1546, 322, 42, 42" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x1gh' aaname='Tasks' /&gt;" Guid="9dacda78-73e1-442d-b9f5-954e48205043" InformativeScreenshot="3cadea5aa53accd3425d24cc712998a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='a7c2p3w79' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.PointOffset>
@@ -235,8 +235,8 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_21" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Manage Intercompany Out…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                  <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Manage Intercompany Out…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="8625ae48-e131-4baf-ad61-40a1c42a1824" ContentHash="7JP2d5-xTEuSNevf_LKung" CvTextArea="1307, 193, 248, 14" CvTextArgument="Manage Intercompany Outbound Transactions" CvType="Text" DesignTimeRectangle="1308, 193, 247, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='xml' aaname='Manage Intercompany Outbound Transactions' check:innerText='Manage Intercompany Outbound Transactions' /&gt;" Guid="5e3f3300-e331-4da4-86cd-4318774099a8" InformativeScreenshot="ba139cc9ffa9505740da187333a93fd9.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/02q27AlhUUenr42_DIq6VQ" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='a7c2p3w79' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.PointOffset>
@@ -255,8 +255,8 @@
                       </uix:VerifyExecutionOptions>
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_45" />
-                  <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="547,5250" sap2010:WorkflowViewState.IdRef="ForEachFileX_9" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_45" />
+                  <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="554,5263" sap2010:WorkflowViewState.IdRef="ForEachFileX_9" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                     <ui:ForEachFileX.Body>
                       <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                         <ActivityAction.Argument1>
@@ -265,7 +265,7 @@
                         <ActivityAction.Argument2>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                         </ActivityAction.Argument2>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,4963" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,4964" sap2010:WorkflowViewState.IdRef="Sequence_33">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="unprocessed_file_path" />
                             <Variable x:TypeArguments="s:String[]" Name="split_unprocessed_file_path" />
@@ -280,7 +280,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,273" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_36">
@@ -326,7 +326,8 @@
                               </scg:List>
                             </ui:MultipleAssign.AssignOperations>
                           </ui:MultipleAssign>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Batch Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,286" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Text="[batch_number]" Version="V4">
+                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="Delay_118" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Batch Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,288" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Text="[batch_number]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="84c7b820-8de6-4c0a-8d13-998df71ab740" ContentHash="xLuitmgRoEmLW4VP8AIjQw" CvElementArea="313, 306, 162, 31" CvType="InputBox" DesignTimeRectangle="315, 308, 158, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname=' Batch Number' /&gt;" Guid="65f788e3-96b9-425f-9c18-5ffd6b64526c" InformativeScreenshot="02dfbd18cf21cc2e7908c168f5bd9795.png" IsResponsive="True" Reference="RjGUmfGqsEmp6iwU4JCC7w/obCyJTTAKkGLv0lAlupnrA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='agmft9ha7' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -573,35 +574,55 @@
                             </uix:NClick.VerifyOptions>
                           </uix:NClick>
                           <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="Delay_111" />
-                          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,193" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[current_file.FullName]" />
-                          <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="479,116" sap2010:WorkflowViewState.IdRef="Delay_112" />
+                          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[current_file.FullName]" />
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEachFileX.Body>
                   </ui:ForEachFileX>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,220" sap2010:WorkflowViewState.IdRef="NClick_111" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" ContentHash="KvjIPNpUTE-Ze5s54aKdOg" CvElementArea="1894, 18, 21, 20" CvType="CloseButton" DesignTimeRectangle="1882, 8, 46, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="a19869f0-ddff-4e47-affe-63726ebddd54" InformativeScreenshot="03e898c9b5efc1f75eb53d3ef2973ebf.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/K5iClX5qAEi3ojci_7S3hQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Manage Intercompany Outbound Transactions - Transactions - Oracl*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" CvElementArea="1849, 18, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="1836, 8, 46, 40" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="49fe4243-3e5a-45e6-9dde-f2f60f128c25" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Sequence - Is Logged Out" sap:VirtualizedContainerService.HintSize="1318,8228" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Sequence - Is Logged Out" sap:VirtualizedContainerService.HintSize="1332,8712" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap:VirtualizedContainerService.HintSize="1284,8166" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence sap:VirtualizedContainerService.HintSize="1298,8650" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1250,8079" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1264,8563" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="1216,122" sap2010:WorkflowViewState.IdRef="Delay_46" />
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Company Single Sign-On''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1216,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                      <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="1230,123" sap2010:WorkflowViewState.IdRef="Delay_46" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Company Single Sign-On''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1230,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="eklm-dev2.login.us2.oraclecloud.com/oam/server/obrareq.cgi" CVScreenId="4b4b479e-55e6-4955-9947-2a2efd96b55d" CvElementArea="624, 428, 333, 54" CvTextArea="687, 446, 205, 21" CvTextArgument="Company Single Sign-On" CvType="Button" DesignTimeRectangle="628, 432, 325, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ssoBtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ssoBtn' tag='BUTTON' type='button' class='ssoBtnActive' aaname='Company Single Sign-On' check:innerText='Company Single Sign-On' /&gt;" Guid="35115756-ada3-497e-8bc8-cd6ab486f6e6" InformativeScreenshot="744c0fc2c0e670fb5c2b313cf65e24bb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                             <uix:TargetAnchorable.PointOffset>
@@ -620,17 +641,17 @@
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
                       </uix:NClick>
-                      <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="1216,122" sap2010:WorkflowViewState.IdRef="Delay_33" />
-                      <uix:NCheckState DisplayName="Check App State 'email'" sap:VirtualizedContainerService.HintSize="1216,7523" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                      <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="1230,122" sap2010:WorkflowViewState.IdRef="Delay_33" />
+                      <uix:NCheckState DisplayName="Check App State 'email'" sap:VirtualizedContainerService.HintSize="1230,8006" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears - Needs Email to Login" sap:VirtualizedContainerService.HintSize="581,7281" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence DisplayName="Target appears - Needs Email to Login" sap:VirtualizedContainerService.HintSize="588,7764" sap2010:WorkflowViewState.IdRef="Sequence_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_32" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''email''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_32" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''email''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/381d31b0-f4b9-4f22-a0dd-92488db3eb82/saml2" CVScreenId="3d6152c4-5e94-43fa-8e32-62ce9a708733" CvTextArea="681, 518, 221, 15" CvTextArgument="Trevor.McKenzie@wescodist.com" CvType="Text" DesignTimeRectangle="579, 489, 440, 72" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='table' aaname='              ' check:innerText='Trevor.McKenzie@wescodist.com' /&gt;" Guid="f9c0b6d1-b4b0-4b52-bff0-31571035ebac" InformativeScreenshot="fa76870494041e520c7bf73b4b9ed9f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_afr_init_' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -654,8 +675,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_23" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Favorites and Recent It…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,122" sap2010:WorkflowViewState.IdRef="Delay_23" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Favorites and Recent It…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/AtkHomePageWelcome" CVScreenId="b297e960-e15d-459f-89f3-6039f1b9cf48" CvElementArea="1362, 183, 29, 28" CvType="Icon" DesignTimeRectangle="1368, 189, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='xiz' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='svg-outline' tableCol='12' tableRow='1' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl class='xiz' tag='TABLE' /&gt;&lt;webctrl class='svg-outline' type='' aaname='' tag='path' /&gt;" Guid="229681a6-973f-41ac-b89d-846da16ec565" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAENSURBVEhLYzDU1fpPDG5urP/f3FCHVQ4bJmhwSIDf/0MHD/yHARAbJIZNLTLGa/Dkif1Q4zABSA6bHhjGanBKYvz/y5cuQo34///0qVP/YyPDwRjEhoFLFy+A1WIzA8VgEwPd/4sXLoBq+///9+/f/3u6OlA0gDBIDCQHAyA9IL3IauAGFxfm/X/08CFU6f//e3bv+u/r5Y6iGBmD5EBqYACkF2QGTJ7BxcH2/6aNG6DS//+/ef36f21VJYoh+DBILUgPDIDMApnJMGPaVKjQ//9rVq38b2tpjtUAfBikB6QXBkBmwg3eumUzVk2kYJAZIDBq8KjBCDxqMBzT32BqYBBAMZiaAG4w9fHU/wA/9UP6KW3SxQAAAABJRU5ErkJggg==" InformativeScreenshot="5161228eb6a9a5eb4e32ea6a2f727d13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='g03co0anm' title='Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -679,8 +700,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_25" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Intercompany Accounting''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_25" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Intercompany Accounting''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="f3d99c35-2366-4b0c-a5d4-898f2778346b" CvElementArea="1284, 393, 22, 27" CvTextArea="1177, 392, 95, 20" CvTextArgument="Intercompar" CvType="ArrowButton" DesignTimeRectangle="1178, 389, 194, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='groupNode_intercompany_accounting' tag='A' type='' class='flat-tabs-text' aaname='Intercompany Accounting' check:innerText='Intercompany Accounting' /&gt;" Guid="19b97a81-5776-4238-a58f-bdce06505535" InformativeScreenshot="39eacc894ebba6a726fb6be961de9978.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='g03co0anm' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.PointOffset>
@@ -699,8 +720,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_26" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Transactions''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_26" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Transactions''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="09e33c87-6b67-485d-b3c7-a6edca2bd0e6" CvElementArea="628, 502, 155, 155" CvTextArea="669, 596, 72, 13" CvTextArgument="Transactions" CvType="Button" DesignTimeRectangle="631, 505, 150, 143" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='itemNode_intercompany_accounting_transactions_processing' tag='DIV' type='subcluster' class='app-nav-item' aaname='' check:innerText='Transactions' /&gt;" Guid="43a12268-7b0d-4126-8c6f-ffe5dbdbbd25" InformativeScreenshot="6399f1910e585346effdbfc3d41ad96b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='g03co0anm' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.PointOffset>
@@ -719,8 +740,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''IMG''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''IMG''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="5426db66-cd33-4dc1-b9bf-3cdcb8230b58" CvElementArea="1529, 371, 47, 47" CvType="Button" DesignTimeRectangle="1531, 374, 42, 42" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x1gh' aaname='Tasks' /&gt;" Guid="a0863424-a6c2-4b68-96e4-837a9eeae1a8" InformativeScreenshot="3b15b5dcff677826556e740b595c8f4c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='g03co0anm' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.PointOffset>
@@ -739,8 +760,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="547,122" sap2010:WorkflowViewState.IdRef="Delay_27" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Manage Intercompany Out…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,227" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                            <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_27" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Manage Intercompany Out…''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,227" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="57b064ea-d2ce-4ddd-ba17-f5f89b4082df" CvTextArea="1292, 245, 248, 14" CvTextArgument="Manage Intercompany Outbound Transactions" CvType="Text" DesignTimeRectangle="1293, 245, 247, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='xml' aaname='Manage Intercompany Outbound Transactions' check:innerText='Manage Intercompany Outbound Transactions' /&gt;" Guid="d7c41546-bc74-45fe-a3cb-a9908e2f0958" InformativeScreenshot="ce2548cfe638cdeb8a129765817c2326.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='g03co0anm' title='Overview - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.PointOffset>
@@ -759,8 +780,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="547,123" sap2010:WorkflowViewState.IdRef="Delay_79" />
-                            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="547,5012" sap2010:WorkflowViewState.IdRef="ForEachFileX_7" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="Delay_79" />
+                            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="554,5263" sap2010:WorkflowViewState.IdRef="ForEachFileX_7" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                               <ui:ForEachFileX.Body>
                                 <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                                   <ActivityAction.Argument1>
@@ -769,7 +790,7 @@
                                   <ActivityAction.Argument2>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                   </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,4720" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,4964" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="unprocessed_file_path" />
                                       <Variable x:TypeArguments="s:String[]" Name="split_unprocessed_file_path" />
@@ -1076,15 +1097,38 @@
                                         </uix:VerifyExecutionOptions>
                                       </uix:NClick.VerifyOptions>
                                     </uix:NClick>
-                                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,186" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[current_file.FullName]" />
+                                    <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="Delay_115" />
+                                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,193" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[current_file.FullName]" />
+                                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Delay_116" />
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachFileX.Body>
                             </ui:ForEachFileX>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,220" sap2010:WorkflowViewState.IdRef="NClick_112" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" ContentHash="KvjIPNpUTE-Ze5s54aKdOg" CvElementArea="1894, 18, 21, 20" CvType="CloseButton" DesignTimeRectangle="1882, 8, 46, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="a19869f0-ddff-4e47-affe-63726ebddd54" InformativeScreenshot="03e898c9b5efc1f75eb53d3ef2973ebf.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/K5iClX5qAEi3ojci_7S3hQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Manage Intercompany Outbound Transactions - Transactions - Oracl*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" CvElementArea="1849, 18, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="1836, 8, 46, 40" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="49fe4243-3e5a-45e6-9dde-f2f60f128c25" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear - Doesn't Need Email to Login" sap:VirtualizedContainerService.HintSize="581,6947" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Target does not appear - Doesn't Need Email to Login" sap:VirtualizedContainerService.HintSize="581,7541" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1196,7 +1240,7 @@
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
                             <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="547,123" sap2010:WorkflowViewState.IdRef="Delay_78" />
-                            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="547,5012" sap2010:WorkflowViewState.IdRef="ForEachFileX_6" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[trigger_folder_path]" sap:VirtualizedContainerService.HintSize="547,5386" sap2010:WorkflowViewState.IdRef="ForEachFileX_6" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                               <ui:ForEachFileX.Body>
                                 <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                                   <ActivityAction.Argument1>
@@ -1205,7 +1249,7 @@
                                   <ActivityAction.Argument2>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                   </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,4720" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,5087" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="unprocessed_file_path" />
                                       <Variable x:TypeArguments="s:String[]" Name="split_unprocessed_file_path" />
@@ -1516,11 +1560,35 @@
                                         </uix:VerifyExecutionOptions>
                                       </uix:NClick.VerifyOptions>
                                     </uix:NClick>
-                                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,186" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="[current_file.FullName]" />
+                                    <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="Delay_113" />
+                                    <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="Delay_114" />
+                                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[archive_folder_path]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="479,193" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="[current_file.FullName]" />
+                                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Delay_117" />
                                   </Sequence>
                                 </ActivityAction>
                               </ui:ForEachFileX.Body>
                             </ui:ForEachFileX>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="547,220" sap2010:WorkflowViewState.IdRef="NClick_113" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="11244a9a-6fbe-4617-9fa7-5c5d72511e19" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" ContentHash="KvjIPNpUTE-Ze5s54aKdOg" CvElementArea="1894, 18, 21, 20" CvType="CloseButton" DesignTimeRectangle="1882, 8, 46, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="a19869f0-ddff-4e47-affe-63726ebddd54" InformativeScreenshot="03e898c9b5efc1f75eb53d3ef2973ebf.png" Reference="RjGUmfGqsEmp6iwU4JCC7w/K5iClX5qAEi3ojci_7S3hQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Manage Intercompany Outbound Transactions - Transactions - Oracl*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="47c6bac2-74cf-4d46-bfd1-586a52b205c0" CvElementArea="1849, 18, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="1836, 8, 46, 40" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Manage Intercompany Outbound Transactions - Transactions - Oracl*' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="49fe4243-3e5a-45e6-9dde-f2f60f128c25" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>

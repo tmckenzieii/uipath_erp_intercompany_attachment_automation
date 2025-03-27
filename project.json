@@ -47,6 +47,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Test Cases\\Test Case Assign Arguments and Variables.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d5147875-edd5-4154-bbe7-eed7482755e8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Cases\\Test Case Open and Navigate to IC Transactions.xaml"
       }
     ],
     "saveToCloud": false

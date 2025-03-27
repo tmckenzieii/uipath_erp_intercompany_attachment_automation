@@ -106,7 +106,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1093,688" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="961,684" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="trigger_folder_path" />
     </Sequence.Variables>
@@ -115,7 +115,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="450,237" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_7" NotifyFilters="FileName" Path="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder\" SchedulingMode="Sequential" TriggerId="c6f4a77e-db32-41ad-912e-1f2bcb49800f" />
+    <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_7" NotifyFilters="FileName" Path="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder\" SchedulingMode="Sequential" TriggerId="c6f4a77e-db32-41ad-912e-1f2bcb49800f" />
     <Sequence sap:VirtualizedContainerService.HintSize="450,428" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="archive_folder_path" />
@@ -127,7 +127,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Assign Folder and File Arguments.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Workflows\Assign Folder and File Arguments.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:String" x:Key="out_trigger_folder_path">[trigger_folder_path]</OutArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="out_archive_folder_path">[archive_folder_path]</OutArgument>
@@ -135,7 +135,7 @@
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_trigger_folder_file_count">[unprocessed_file_count]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Open and Navigate to IC Transactions.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Workflows\Open and Navigate to IC Transactions.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>
