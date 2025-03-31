@@ -4,7 +4,9 @@
   "description": "This automation triggers when a CSV is dropped into a preselected folder. The sequence will open Microsoft Edge on the Oracle page, log in, navigate to the IC module and insert the batch number from the file name (ex. 1234_info.csv), before attaching the file and moving it to an archive folder.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[25.2.1]",
+    "UiPath.FTP.Activities": "2.4.0",
+    "UiPath.System.Activities": "25.2.2",
+    "UiPath.Testing.Activities": "[24.10.1]",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
   },
   "webServices": [],
@@ -43,17 +45,17 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "4aebb2e6-c563-49c1-9f71-70fc3abcd30b",
+        "testCaseId": "a78c3547-0ed9-4e7b-963a-31b587f1b15c",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Test Cases\\Test Case Assign Arguments and Variables.xaml"
+        "fileName": "Test Cases\\TC_Trigger Folder Path Exists.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "d5147875-edd5-4154-bbe7-eed7482755e8",
+        "testCaseId": "8305b456-9c7d-40a1-b4fc-60937e6421c1",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Test Cases\\Test Case Open and Navigate to IC Transactions.xaml"
+        "fileName": "Test Cases\\TC_Archive Folder Path Exists.xaml"
       }
     ],
     "saveToCloud": false

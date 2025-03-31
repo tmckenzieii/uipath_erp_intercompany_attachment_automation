@@ -1,11 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="TriggerEventArgs" Type="InArgument(ui:FileChangeTriggerArgs)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,6 +40,7 @@
       <x:String>UiPath.UIAutomationNext.Models</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -104,9 +98,14 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="961,684" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1012,580.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="trigger_folder_path" />
     </Sequence.Variables>
@@ -115,7 +114,6 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_7" NotifyFilters="FileName" Path="C:\Users\e312628\OneDrive - WESCO DISTRIBUTION\Desktop\UI Path IC GL Update Automation\01 Test Trigger Folder\" SchedulingMode="Sequential" TriggerId="c6f4a77e-db32-41ad-912e-1f2bcb49800f" />
     <Sequence sap:VirtualizedContainerService.HintSize="450,428" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="archive_folder_path" />
@@ -135,7 +133,7 @@
           <OutArgument x:TypeArguments="x:Int32" x:Key="out_trigger_folder_file_count">[unprocessed_file_count]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Workflows\Open and Navigate to IC Transactions.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Workflows\Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Workflows\Open and Navigate to IC Transactions.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>
