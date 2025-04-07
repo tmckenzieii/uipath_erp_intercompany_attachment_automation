@@ -56,6 +56,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Test Cases\\TC_Archive Folder Path Exists.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2e0e9feb-d5b4-4433-bec9-56be8441ff17",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Cases\\TC_Nav to Search.xaml"
       }
     ],
     "saveToCloud": false

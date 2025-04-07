@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="2OoHn6a3ikWRs6kKhdeBMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="qdVzFcUEf0uZEqaOFInMIA" Reference="RjGUmfGqsEmp6iwU4JCC7w/NWBfOgGy0kSWYMC-YXrc0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="91827f52-0848-44bf-b2ea-0a93a153b382" CvElementArea="454, 505, 82, 23" CvTextArea="463, 510, 153, 12" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="456, 507, 300, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='x2k' tag='INPUT' type='file' aaname='File Name' /&gt;" Guid="591eeca6-fd5b-4eda-b250-f34bacb67332" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='9oy2ss5vj' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="91827f52-0848-44bf-b2ea-0a93a153b382" CvElementArea="454, 505, 82, 23" CvTextArea="463, 510, 153, 12" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="456, 507, 300, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='x2k' tag='INPUT' type='file' aaname='File Name' /&gt;" Guid="591eeca6-fd5b-4eda-b250-f34bacb67332" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='9oy2ss5vj' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
       <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
           <Target CVScreenId="91827f52-0848-44bf-b2ea-0a93a153b382" CvTextArea="539, 510, 77, 12" CvTextArgument="No file chosen" CvType="Text" DesignTimeRectangle="539, 510, 77, 12" ElementType="Text" Guid="9c3ada1b-c145-4026-93b4-0bf01575dd8b" SearchSteps="CV" TargetType="ComputerVisionBased" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="113d6ef61d6cb834767504dbef130c94.png" xmlns="">0k8juLOR590O1ykhMSGne3g</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="113d6ef61d6cb834767504dbef130c94.png" xmlns="">08zgKRgRtC022fooeqNCLCg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

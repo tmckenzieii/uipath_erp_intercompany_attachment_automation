@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="gQh8bYo4KkKM5wEDJEZWiw" Reference="RjGUmfGqsEmp6iwU4JCC7w/Crk4apKQvEq5pL0FJavldg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="H_DVwvZ430-iIYNYldi0fQ" Reference="RjGUmfGqsEmp6iwU4JCC7w/Crk4apKQvEq5pL0FJavldg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a5322f23-f914-4b9b-9ca3-9963a984ce9f" CvTextArea="75, 442, 36, 12" CvTextArgument="22257" CvType="Text" DesignTimeRectangle="77, 442, 33, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xmx' type='' tag='A' aaname='{0}' check:innerText='{0}' /&gt;&quot;, batch_number)]" Guid="b4a4e09d-685b-4078-9718-55386578fe2e" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='176wvvynn3' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="32171b7946b1b997689904aa1ab58835.png" xmlns="">0pHbovdzjvkCGtxo6g8j1gw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a5322f23-f914-4b9b-9ca3-9963a984ce9f" CvTextArea="75, 442, 36, 12" CvTextArgument="22257" CvType="Text" DesignTimeRectangle="77, 442, 33, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xmx' type='' tag='A' aaname='{0}' check:innerText='{0}' /&gt;&quot;, batch_number)]" Guid="b4a4e09d-685b-4078-9718-55386578fe2e" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='176wvvynn3' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="32171b7946b1b997689904aa1ab58835.png" xmlns="">0YCk4IAFpWUCejfZjDDidKA</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">None</x:String>
     <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
-      <ObjectRepositoryVariableData DefaultValue="22257" Name="batch_number" />
+      <ObjectRepositoryVariableData Name="batch_number" />
     </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

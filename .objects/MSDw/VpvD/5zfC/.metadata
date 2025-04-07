@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Manage Intercompany Outbound Transacti(1)",
+  "Type": "Screen",
+  "Id": "5zfC4MVFfkW0lNJ5AJfJ2A",
+  "Reference": "RjGUmfGqsEmp6iwU4JCC7w/5zfC4MVFfkW0lNJ5AJfJ2A",
+  "ParentRef": "RjGUmfGqsEmp6iwU4JCC7w/VpvDewR8xEGMSiv4Q90dwA",
+  "Created": "2025-04-07T15:12:50.2671182Z",
+  "Updated": "2025-04-07T15:12:50.2671182Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
