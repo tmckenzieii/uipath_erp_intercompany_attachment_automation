@@ -137,10 +137,11 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assign Folder and File Arguments - Invoke Workflow File (Assign Folder and File Arguments.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Workflows\Assign Folder and File Arguments.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_trigger_folder_path">[trigger_folder_path]</OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_archive_folder_path">[archive_folder_path]</OutArgument>
-          <OutArgument x:TypeArguments="s:String[]" x:Key="out_trigger_folder_files">[unprocessed_files]</OutArgument>
-          <OutArgument x:TypeArguments="x:Int32" x:Key="out_trigger_folder_file_count">[unprocessed_file_count]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_errored_folder_path" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_holding_folder_path" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_completed_folder_path" />
+          <OutArgument x:TypeArguments="s:String[]" x:Key="out_holding_folder_files" />
+          <OutArgument x:TypeArguments="x:Int32" x:Key="out_holding_folder_file_count" />
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open and Navigate to IC Transactions - Invoke Workflow File (Workflows\Open and Navigate to IC Transactions.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Workflows\Open and Navigate to IC Transactions.xaml">
