@@ -5,6 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.FTP.Activities": "2.4.0",
+    "UiPath.MicrosoftOffice365.Activities": "[3.1.10-preview]",
     "UiPath.System.Activities": "25.2.2",
     "UiPath.Testing.Activities": "[24.10.1]",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
