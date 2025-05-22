@@ -91,14 +91,14 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Initial_Variable_Assignment" sap:VirtualizedContainerService.HintSize="1309,1962" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Initial_Variable_Assignment" sap:VirtualizedContainerService.HintSize="1309,1935" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Starting outward argument assignment for folders &amp; files process&quot;]" />
-    <ui:CommentOut DisplayName="Multi Assign - Prior Functional" sap:VirtualizedContainerService.HintSize="468,84" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:LogMessage DisplayName="Log process start" sap:VirtualizedContainerService.HintSize="468,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Starting outward argument assignment for folders &amp; files process&quot;]" />
+    <ui:CommentOut DisplayName="Multi Assign - Prior Functional" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="513,292" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -153,14 +153,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="Assigning directory and file arguments" sap:VirtualizedContainerService.HintSize="468,1518" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Assign directory and file arguments" sap:VirtualizedContainerService.HintSize="468,1518" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Assigning the outward argument for the holding folder&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign DisplayName="Assign arg for holding folder path" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_holding_folder_path]</OutArgument>
         </Assign.To>
@@ -169,7 +169,7 @@
         </Assign.Value>
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Assigning the outward argument for the errored files folder&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign DisplayName="Assign arg for errored files path" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_errored_folder_path]</OutArgument>
         </Assign.To>
@@ -178,7 +178,7 @@
         </Assign.Value>
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Assigning the outward argument for the completed files folder&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign DisplayName="Assign arg for completed files path" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_completed_folder_path]</OutArgument>
         </Assign.To>
@@ -187,7 +187,7 @@
         </Assign.Value>
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Assigning the outward argument for the holding folder files&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign DisplayName="Assign arg for holding folder files" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="s:String[]">[out_holding_folder_files]</OutArgument>
         </Assign.To>
@@ -196,7 +196,7 @@
         </Assign.Value>
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Assigning the outward argument for the count of holding folder files&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign DisplayName="Assign arg for holding folder file count" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[out_holding_folder_file_count]</OutArgument>
         </Assign.To>
@@ -205,6 +205,6 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Completed outward argument assignment for folders &amp; files process&quot;]" />
+    <ui:LogMessage DisplayName="Log process end" sap:VirtualizedContainerService.HintSize="468,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Completed outward argument assignment for folders &amp; files process. Ending argument assignments.&quot;]" />
   </Sequence>
 </Activity>
