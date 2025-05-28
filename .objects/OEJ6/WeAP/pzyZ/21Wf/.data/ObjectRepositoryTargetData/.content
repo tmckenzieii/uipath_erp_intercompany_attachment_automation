@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4ZAdEArlZEePjVIQHLL_Fg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.microsoftonline.com/381d31b0-f4b9-4f22-a0dd-92488db3eb82/saml2" CVScreenId="1942e77a-d637-4562-8250-b2058d8176f0" CvElementArea="1299, 10, 19, 18" CvType="CloseButton" DesignTimeRectangle="1285, 1, 46, 39" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Sign out - Google Chrome - Trevor' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign out - Google Chrome - Trevor' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="4ab1bb66-7da5-4e1c-a3bf-eee0a70dcb0a" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sign out - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1942e77a-d637-4562-8250-b2058d8176f0" CvElementArea="1252, 9, 20, 20" CvType="MaximizeButton" DesignTimeRectangle="1239, 1, 46, 39" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Sign out - Google Chrome - Trevor' role='pane' /&gt;&lt;ctrl name='Maximize' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign out - Google Chrome - Trevor' role='pane' /&gt;&lt;ctrl name='Maximize' role='push button' automationid='' check:text='Maximize' /&gt;" Guid="ecdf6f2f-0609-42da-bd56-3f8420527d93" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="864d4654eedee5dd370ab6e9cb06c744.png" xmlns="">0DfGgyBTTt0Of-uwt-1qH0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
