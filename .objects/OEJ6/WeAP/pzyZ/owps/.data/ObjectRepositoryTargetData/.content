@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2fqAA1qqpE2d5wEfZiABqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eklm-dev2.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome" CVScreenId="a69ceace-2dc0-45e9-803e-b9f20967e6a8" CvTextArea="22, 511, 91, 15" CvTextArgument="NO results found." CvType="Text" DesignTimeRectangle="18, 507, 1303, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='cell' tag='DIV' type='' class='x1hk' aaname='No results found.' check:innerText='No results found.' /&gt;" Guid="6e1e7c6c-8471-4b93-9283-becae16d1acc" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='1d52d3c9vk' title='Manage Intercompany Outbound Transactions - Transactions - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a69ceace-2dc0-45e9-803e-b9f20967e6a8" CvTextArea="22, 511, 91, 15" CvTextArgument="NO results found." CvType="Text" DesignTimeRectangle="22, 511, 91, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='cell' tag='DIV' type='' class='x1hk' aaname='No results found.' check:innerText='No results found.' /&gt;" Guid="769adec5-a6f2-4867-ad1d-a5c2d7d30c81" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7eced064b06cd577a14d3f043abe24ae.png" xmlns="">0PdLktSgCTEmrNFhn-KP7uw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
